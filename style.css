@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: auto;
+}
+
+.image {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	background-color: #f1c40f;
+	align-items: center;
+
+}
+
+.imgwrap {
+	margin: auto;
+}
+
+.image img {
+	display: block;
+	width: auto;
+	border-radius: 50%;
+}
+
+.description {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	box-sizing: border-box;
+	padding: 100px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	line-height: 20px;
+}
+
+.head {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.head h1 {
+	margin-bottom: 10px;
+	font-weight: 800;
+	line-height: 30px;
+}
+
+.head h2 {
+	opacity: .5;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	left: 48.5%;
+	top: 30;
+}
+
+.social li {
+	width: 50px;
+	height: 40px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+}
+
+.social li a {
+	text-align: center;
+	opacity: 0;
+}
+
+.social li:nth-child(1) {
+	background: url('img/icon/linkedin.png')no-repeat;
+}
+.social li:nth-child(2) {
+	background: url('img/icon/instagram.png')no-repeat;
+	border-radius: 0;
+}
+
+main section:nth-child(1) {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 40px auto;
+	flex-wrap: wrap;
+}
+
+.box {
+	text-align: center;
+}
+
+main section:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	background-color: #ecf0f1;
+}
+
+.web-flexbox {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 100px;
+}
+
+.web-flexbox h1 {
+	margin: 50px;
+}
+
+.web-flexbox h2 {
+	writing-mode: vertical-rl;
+}
+
+.web-box {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.box1 {
+	max-width: 550px;
+}
+
+.box2 {
+	max-width: 200px;
+}
+
+section:nth-child(3) h1 {
+	margin: 50px;
+}
+
+section:nth-child(3) img {
+	width: 200px;
+	margin: 5px;
+}
+
+.logo-flexbox {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 50px;
+}
+
+.logo-flexbox h1 {
+	margin: 50px;
+}
+
+main section:nth-child(4) {
+	background-color: #ecf0f1;
+	padding: 50px 0
+}
+
+main section:nth-child(4) img {
+	width: 400px;
+	margin: 10px;
+}
+
+main section:nth-child(4) h1 {
+	margin: 0px 0px 50px 50px;
+
+}
+
+.certi-box {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+
+main section:nth-child(5) {
+	padding: 50px 0;
+	font-size: 20px;
+	line-height: 40px;
+}
+
+main section:nth-child(5) h1 {
+	margin-left: 50px;
+	margin-bottom: 30px;
+}
+
+.way-box {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.way-boxes ul {
+	list-style: initial;
+}
+
+footer {
+	width: 100%;
+	height: 350px;
+	background-color: #f1c40f;
+	color: white;
+}
+
+footer section:nth-child(1) {
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+	margin: auto;
+	align-items: center;
+}
+
+footer section:nth-child(2) {
+	text-align: center;
+	margin-top: 50px;
+	opacity: .7;
+}
+
+.contact {
+	display: flex;
+	align-items: center;
+}
+
+.fotbox {
+	margin: 50px 20px 0 20px;
+}
+
+.pp {
+	border-radius: 50%;
+	width: 200px;
+}
+
+.p1 {
+	opacity: .7;
+}
+
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 734px) {
+	header {
+		flex-direction: column;
+	}
+
+	.image, .description {
+		width: 100%;
+	}
+
+	.description {
+		height: auto;
+		padding: 20px;
+	}
+	
+	.image img {
+		width: 15em;
+	}
+
+	.social {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	left: 40%;
+	bottom: 0;
+	align-items: center;
+	
+}
+
+.social ul {
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+	justify-content: space-around;
+}
+
+	.box1 {
+		width: 15em;
+	}
+
+	.box2 {
+		width: 7em;
+	}
+
+	.logo-flexbox {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	.logo-flexbox img {
+		width: 20px;
+	}
+
+	.wayboxes img {
+		display: none;
+	}
+
+	footer {
+		height: 700px;
+	}
+
+	footer section:nth-child(1) {
+		flex-direction: column;
+	}
+
+	.kesatu {
+		order: 1;
+	}
+
+	.kedua {
+		order: 2;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.certi-box img {
+		max-width: 250px;
+	}
+
+	.box1 {
+		width: 10em;
+	}
+
+	.box2 {
+		width: 5em;
+	}
+}
