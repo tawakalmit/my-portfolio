@@ -94,6 +94,10 @@ header {
 	background: url('img/icon/instagram.png')no-repeat;
 	border-radius: 0;
 }
+.social li:nth-child(3) {
+	background: url('img/icon/github.png')no-repeat;
+	border-radius: 0;
+}
 
 main section:nth-child(1) {
 	display: flex;
